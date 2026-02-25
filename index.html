@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Planning & Resume Mentor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.html">
+    <link rel="stylesheet" href="carrer.html">
+    <link rel="stylesheet" href="profile.">
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>🎯 Tech Bots</h2>
+    <div>
+        <button onclick="showSection('home')"><i class="fa fa-home"></i> Home</button>
+<button onclick="openProfilePage()"><i class="fa fa-user"></i> Profile</button>
+<button onclick="openCareerPage()"><i class="fa fa-comments"></i> Career Guidance</button>
+<button onclick="openResumePage()"><i class="fa fa-file"></i> Resume Builder</button>
+    </div>
+</div>
+
+<!-- Home Section -->
+<section id="home" class="section">
+    <h1>Career Planning & Resume Mentor</h1>
+    <p>Your Virtual Career Counselor to guide you towards the right career path.</p>
+</section>
+<section id="home" class="section">
+    <h1>🚀 Welcome to Career Planning & Resume Mentor</h1>
+    <p>
+        Your intelligent career companion that helps you discover the right path,
+        identify required skills, and build professional resumes aligned with industry expectations.
+    </p>
+</section>
+<!-- Profile Section -->
+<section id="profile" class="section hidden">
+    <h2>Create Your Profile</h2>
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="education" placeholder="Education">
+    <input type="text" id="skills" placeholder="Skills">
+    <input type="text" id="interest" placeholder="Career Interest">
+    <button onclick="saveProfile()">Save Profile</button>
+</section>
+
+<!-- Career Guidance Section -->
+<section id="career" class="section hidden">
+    <h2>Career Recommendation</h2>
+    <button onclick="analyzeCareer()">Get Career Suggestion</button>
+    <p id="careerResult"></p>
+</section>
+
+<!-- Resume Builder Section -->
+<section id="resume" class="section hidden">
+    <h2>Build Your Resume</h2>
+    <textarea id="resumeContent" placeholder="Write your achievements..."></textarea>
+    <button onclick="generateResume()">Generate Resume</button>
+
+    <div id="resumePreview"></div>
+</section>
+
+<script src="script.js">
+    
+</script>
+
+</body>
+</html>

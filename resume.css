@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eef2f7;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.form-section {
+    width: 40%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 12px;
+    width: 100%;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.preview-section {
+    width: 60%;
+}
+
+.resume {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    min-height: 500px;
+}
+
+.resume h1 {
+    margin-bottom: 5px;
+}
+
+.resume .title {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    margin-top: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}

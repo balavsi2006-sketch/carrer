@@ -1,9 +1,9 @@
-// Import Firebase
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your config
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAD_WwJPnmRc2i1Qa7QlYPL_ILRYwV3QKc",
   authDomain: "career-mentor-platform.firebaseapp.com",
@@ -15,7 +15,3 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Services
-export const auth = getAuth(app);
-export const db = getFirestore(app);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>📄 Resume Builder</h1>
+
+    <div class="form-section">
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="title" placeholder="Career Title (Eg: Software Developer)">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone">
+
+        <textarea id="summary" placeholder="Professional Summary"></textarea>
+        <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+        <textarea id="education" placeholder="Education Details"></textarea>
+        <textarea id="projects" placeholder="Projects"></textarea>
+
+        <button onclick="generateResume()">Generate Resume</button>
+    </div>
+
+    <div class="preview-section">
+        <div id="resumePreview" class="resume">
+            <h2>Your Resume Preview Will Appear Here</h2>
+        </div>
+    </div>
+</div>
+
+<script src="resume.js"></script>
+</body>
+</html>
